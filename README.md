@@ -36,7 +36,7 @@ If you want to run the app on your smartphone you'll need to install Expo.
 - For android devices download Expo <a href="https://play.google.com/store/apps/details?id=host.exp.exponent">here</a>.
 - For iphones download Expo <a href="https://apps.apple.com/us/app/expo-client/id982107779">here</a>.
 
-To run the app scan the QR code generated when you ran "npm i" on the client.
+To run the app scan the QR code generated when you ran "npm start" on the client.
 
 That's it!
 
