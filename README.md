@@ -4,6 +4,10 @@
 Genius is an app that help students to improve their knowledge and memory by using a card system and spaced review strategy.<br>
 Users can create their own cards and share them with the community, also study with cards available in the community section.
 
+## Technologies used
+* Frontend: React Native.
+* Backend: MongoDB, Mongoose.
+
 ## What you can do on Genius?
 ### Create cards
 You can create your own cards to study. There are 3 type:
