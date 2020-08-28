@@ -41,7 +41,6 @@ export default function CommunityDeckDetails ({ navigation }) {
   )
 }
 
-// Estos estilos se repiten en Home, son los del "+", puedo sinó crear un componente para los "+"
 const styles = StyleSheet.create({
   modalToggle: {
     marginTop: 20,

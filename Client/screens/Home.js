@@ -165,7 +165,7 @@ export default function Home ({ navigation, screenProps }) {
           renderItem={({ item }) => (
             <View style={globalStyles.subContainer}>
               <TouchableOpacity
-                onPress={() => navigation.push('DeckDetails', { item, addCard, editCard, deleteCard, setNextReview })} /* the same than do navigation.navigate('ReviewDetails', item); */
+                onPress={() => navigation.push('DeckDetails', { item, addCard, editCard, deleteCard, setNextReview })}
                 onLongPress={() => {
                   setPopUpDeleteDeck(true);
                   setDeckToDelete(item.title);

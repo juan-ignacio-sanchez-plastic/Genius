@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { View, Animated, Text, AsyncStorage } from 'react-native';
 import { globalStyles } from './styles/globalStyles';
 import config from './config';
@@ -12,7 +12,7 @@ const verifyAnswer = (userAnswer, card) => {
 const showFadeMessage = (message) => {
   const fadeValue = new Animated.Value(1);
   Animated.timing(fadeValue, {
-    toValue: 0, // 0 because after the 3000 ms it's not visible
+    toValue: 0,
     duration: 3000
   }).start();
 

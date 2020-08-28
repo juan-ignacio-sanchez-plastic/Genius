@@ -73,4 +73,4 @@ export default [
       { front: "I need to go to my hotel", answer: "Preciso ir ao meu hotel", type: "Fill card", key: "2", lastReview: Date.now(), nextReview: Date.now(), multipleChoiceIncorrectAnswers: [null, null, null] },
     ],
   },
-]
+];

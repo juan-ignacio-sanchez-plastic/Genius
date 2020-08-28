@@ -17,10 +17,6 @@ const reviewSchema = yup.object({
 const multipleChoiceSchema = yup.object({
   front: yup.string().max(1000).required(),
   answer: yup.string().max(1000).required(),
-  // TODO: Fix error. Brokes when fill the last incorrect answer
-  // multipleChoiceIncorrectAnswers: yup.array().of(
-  //   yup.string().max(1000).required('this is a required field').typeError('this is a required field') // need to add typeError because I define that by default the initial value is [null, null, null] and null is not an string, that's why I need to handle that error this way or inside yup.string('Error message')
-  // ),
 });
 
 
@@ -41,7 +37,7 @@ export default function AddOrEditCard ({ navigation }) {
             initialValues={{ front: addCard ? '' : card.front, answer: addCard ? '' : card.answer, type: addCard ? type : card.type, multipleChoiceIncorrectAnswers: addCard ? [null, null, null] : card.multipleChoiceIncorrectAnswers }}
             validationSchema={type === 'Multiple choice card' ? multipleChoiceSchema : reviewSchema}
             onSubmit={(values, actions) => {
-              if (addCard) { // if addCard func doesn't exist then this component was called to edit the card not to add a new card
+              if (addCard) {
                 Keyboard.dismiss();
                 addCard(deckTitle, values);
                 actions.resetForm();
@@ -55,9 +51,10 @@ export default function AddOrEditCard ({ navigation }) {
                   editedCard.multipleChoiceIncorrectAnswers = [null, null, null];
                 editCard(deckTitle, editedCard);
               }
-              setFadeMessage(addCard  // save into fadeMessage variable the fade message component
-                ? showFadeMessage('Card created')
-                : showFadeMessage('Card modified')
+              setFadeMessage(
+                addCard
+                  ? showFadeMessage('Card created')
+                  : showFadeMessage('Card modified')
               )
             }}
           >
@@ -112,9 +109,9 @@ export default function AddOrEditCard ({ navigation }) {
                       style={globalStyles.input}
                       value={formikProps.values.front}
                       onChangeText={formikProps.handleChange('front')}
-                      onBlur={formikProps.handleBlur('front') /* to do a real time validation. Needed to display the error message if user is in front field and touch somewhere else */}
+                      onBlur={formikProps.handleBlur('front')}
                     />
-                    <Text key='errorMessageFront' style={globalStyles.errorText}>{formikProps.touched.front && formikProps.errors.front /* If user have touched front field and there don't pass the validation THEN will show a message saying why is not passing the validation */}</Text>
+                    <Text key='errorMessageFront' style={globalStyles.errorText}>{formikProps.touched.front && formikProps.errors.front}</Text>
                     {
                       type === 'Multiple choice card'
                         ? <>
@@ -131,7 +128,7 @@ export default function AddOrEditCard ({ navigation }) {
                             onChangeText={formikProps.handleChange('answer')}
                             onBlur={formikProps.handleBlur('answer')}
                           />
-                          <Text key='errorMessageCorrectAnswer' style={globalStyles.errorText}>{formikProps.touched.answer && formikProps.errors.answer /* If user have touched front field and there don't pass the validation THEN will show a message saying why is not passing the validation */}</Text>
+                          <Text key='errorMessageCorrectAnswer' style={globalStyles.errorText}>{formikProps.touched.answer && formikProps.errors.answer}</Text>
                           <Text
                             key='titleIncorrectAnswers'
                             style={{ ...globalStyles.titleText, ...globalStyles.redColor, marginTop: 30, marginBottom: 20 }}

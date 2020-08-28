@@ -16,7 +16,7 @@ const reviewSchema = yup.object({
 });
 
 
-export default function LogIn ({ setComponentToRender, setIsAuthenticated }) {  // TODO: onSumbit function, singUp redirection
+export default function LogIn ({ setComponentToRender, setIsAuthenticated }) {
 
   const logIn = async (user) => {
     const res = await apliClient.login(user);

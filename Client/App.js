@@ -1,21 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import * as Font from 'expo-font';  /* to get the necessary methods to load my custom fonts */
-import { AppLoading } from 'expo';  /* component that will be shown while the app is fetching data and is not ready */
+import React, { useState } from 'react';
+import * as Font from 'expo-font';
+import { AppLoading } from 'expo';
 import Navigator from './routes/drawer';
 
-const getFonts = () => Font.loadAsync({   /* Loads the fonts asynchronously */
+const getFonts = () => Font.loadAsync({
   'nunito-regular': require('./assets/fonts/Nunito-Regular.ttf'),
   'nunito-bold': require('./assets/fonts/Nunito-Bold.ttf'),
 });
 
 export default function App () {
   const [fontsLoaded, setFontsLoaded] = useState(false);
-  const [isAuthenticated, setIsAuthenticated] = useState(false);   // this needs to be here, have to see how pass it throw the navigator
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [decks, setDecks] = useState(null);
 
   if (fontsLoaded) {
     return (
-
       <Navigator
         screenProps={{
           isAuthenticated,
@@ -30,7 +29,7 @@ export default function App () {
 
       <AppLoading
         startAsync={getFonts}
-        onFinish={() => setFontsLoaded(true)}   /* when finish loading the fonts change the flag's value */
+        onFinish={() => setFontsLoaded(true)}
       />
     )
   }

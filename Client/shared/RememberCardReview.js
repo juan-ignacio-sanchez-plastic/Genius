@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { StyleSheet, TouchableOpacity, Text, View, Keyboard } from 'react-native';
+import React from 'react';
+import { Text } from 'react-native';
 import { Formik } from 'formik';
 
 import Card from '../shared/Card';
@@ -28,7 +28,6 @@ export default function RememberCardReview ({ card, verifyUserAnswer, cardStatus
                 ? <Card>
                   <Text>{card.answer}</Text>
                 </Card>
-
                 : <ButtonGray
                   title='Show answer'
                   onPress={formikProps.handleSubmit}

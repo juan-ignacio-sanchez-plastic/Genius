@@ -33,8 +33,8 @@ const screens = {
 
 const CommunityStack = createStackNavigator(screens,
   {
-    defaultNavigationOptions: {   // here I define the default values for the header, that are going to be the same in all screens, to no repeat the code in navigationOptions of each screen
-      headerTintColor: '#444',  // to set the font color in the header
+    defaultNavigationOptions: {
+      headerTintColor: '#444',
       headerStyle: { backgroundColor: '#eee', height: 70 }
     }
   });

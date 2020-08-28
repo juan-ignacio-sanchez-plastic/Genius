@@ -7,7 +7,6 @@ const baseURL = 'http://192.168.0.12:3200/';
 
 function fetchData (endpoint, options) {
   return fetch(`${baseURL}${endpoint}`, options)
-    // .then(res => res.status < 400 ? res : Promise.reject(res))  // Throws an error
     .then(res => res.status !== 204 ? res.json() : res)
     .catch(err => {
       console.error(`Error fetching ${baseURL}${endpoint} with method ${options ? options.method : 'GET'}`);

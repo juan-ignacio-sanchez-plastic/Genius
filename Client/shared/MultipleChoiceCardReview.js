@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { StyleSheet, TouchableOpacity, Text, View, Keyboard, ScrollView } from 'react-native';
-import RadioForm, { RadioButton, RadioButtonInput, RadioButtonLabel } from 'react-native-simple-radio-button';
+import React from 'react';
+import { Text, View, ScrollView } from 'react-native';
+import RadioForm from 'react-native-simple-radio-button';
 import { Formik } from 'formik';
 
 import Button from './Button';
@@ -44,7 +44,7 @@ export default function MultipleChoiceCardReview ({ card, verifyUserAnswer, card
                 <View>
                   <RadioForm
                     radio_props={radio_props}
-                    initial={-1}  // to not select any at the beginning
+                    initial={-1}
                     value={formikProps.values.userAnswer}
                     onPress={formikProps.handleChange('userAnswer')}
                     buttonSize={12}

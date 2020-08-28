@@ -18,7 +18,7 @@ export default function DeckAllCards ({ navigation }) {
     <View style={{ marginTop: 23 }}>
       <NavigationEvents
         onDidFocus={() => {
-          setUpdateFlatList(Math.random());  // need to pass a different value to FlatList to update it
+          setUpdateFlatList(Math.random());
         }}
       />
       < FlatList

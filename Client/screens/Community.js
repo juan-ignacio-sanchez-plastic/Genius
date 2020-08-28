@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, View, Text, FlatList, TouchableOpacity, ScrollView } from 'react-native';
-import { FontAwesome } from '@expo/vector-icons';
+import { View, Text, FlatList, TouchableOpacity } from 'react-native';
 
 import { globalStyles } from '../styles/globalStyles';
 import Card from '../shared/Card';
@@ -38,7 +37,7 @@ export default function Community ({ navigation, screenProps }) {
         renderItem={({ item }) => (
           <View style={{ marginHorizontal: 20, marginBottom: 5 }}>
             <TouchableOpacity
-              onPress={() => navigation.push('CommunityDeckDetails', { item, handleDownload })} /* the same than do navigation.navigate('ReviewDetails', item); */
+              onPress={() => navigation.push('CommunityDeckDetails', { item, handleDownload })}
             >
               <Card>
                 <View style={{ flex: 1 }}>
@@ -55,9 +54,6 @@ export default function Community ({ navigation, screenProps }) {
                       </Text>
                     </TouchableOpacity>
                   </View>
-                  {/* <View>
-                    <FontAwesome name='star' size={14} {...globalStyles.geniusColor} />
-                  </View> */}
                 </View>
               </Card>
             </TouchableOpacity>

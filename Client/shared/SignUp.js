@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Text, TextInput, ScrollView, Keyboard, TouchableOpacity, Alert } from 'react-native';
+import { View, Text, TextInput, ScrollView, Keyboard, TouchableOpacity, Alert } from 'react-native';
 import { Formik } from 'formik';
 import * as yup from 'yup';
 import DateTimePickerModal from "react-native-modal-datetime-picker";

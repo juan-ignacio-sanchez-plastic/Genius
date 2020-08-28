@@ -1,13 +1,11 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
-// Here I'm saying that everything that is inside <View> </View> put it where is {props.childer} so inside of those 2 Views
-// Is used to set styles
 export default function Card (props) {
   return (
     <View style={styles.card}>
       <View style={styles.cardContent}>
-        {props.children /* props.children is everything that is inside <View> -> Children <- </View> */}
+        {props.children}
       </View>
     </View>
   )
