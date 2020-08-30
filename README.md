@@ -49,6 +49,6 @@ Deployment coming soon!
 
 <div align="center">
   <b>Join to Genius community!</b></br>
-  <b>Become Genius!</b></br>
+  <b>And become Genius!</b></br>
 <img src="./Client/assets/logo - full.png" alt="Genius Logo" width="200"/>
 </div>
