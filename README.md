@@ -1,13 +1,6 @@
-# Genius
-
-## What is Genius?
-Genius is an app that helps students to improve their knowledge and memory by using a card system and spaced review strategy.<br>
+# Genius 🧠
+Genius is a mobile app that helps students to improve their knowledge and memory by using a card system and spaced review strategy.<br>
 Users can create their own cards and share them with the community, also study with cards available in the community section.
-
-
-## Technologies used
-* Frontend: React Native.
-* Backend: MongoDB, Mongoose.
 
 ## What you can do on Genius?
 ### Create cards
@@ -25,14 +18,16 @@ Genius also offers you the possibility to regulate your studying intervals.
 You can share your cards with the community and also study the cards that someone else has made!
 
 
-## Getting started
+
+## Getting started 🚀
 Make sure you have NodeJS installed.
 
 * clone the project
 * run <b>npm i</b> on both "server" and "client" folder
 * run <b>npm start</b> on both "server" and "client" folder
 
-### Run Genius on your smartphone
+
+### Run Genius on your smartphone 📱
 If you want to run the app on your smartphone you'll need to install Expo.
 - For android devices download Expo <a href="https://play.google.com/store/apps/details?id=host.exp.exponent">here</a>.
 - For iphones download Expo <a href="https://apps.apple.com/us/app/expo-client/id982107779">here</a>.
@@ -40,5 +35,11 @@ If you want to run the app on your smartphone you'll need to install Expo.
 To run the app, scan the QR code generated when you ran "npm start" on the “client”.
 
 That's it!
+
+
+## Tech stack 👩‍💻 
+* Frontend: React Native.
+* Backend: MongoDB, Mongoose.
+
 
 Welcome to Genius community! 🤓
