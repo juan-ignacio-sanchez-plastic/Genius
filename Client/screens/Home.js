@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, View, Text, FlatList, TouchableOpacity, Modal, TouchableWithoutFeedback, Keyboard } from 'react-native';
+import { StyleSheet, View, Text, FlatList, TouchableOpacity, Modal, TouchableWithoutFeedback, Keyboard, ImageBackground } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 import Dialog from "react-native-dialog";
 
@@ -227,4 +227,3 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 });
-
