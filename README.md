@@ -7,7 +7,7 @@ Users can create their own cards and share them with the community, also study w
 You can create your own cards to study. There are 3 type:
 * Remember card. Where you need to remember the answer. This card is very useful for long explanations that can be explained in different ways.
 * Fill card. Where you need to write the correct answer. The best option if you want to study a language, coding, or any other topic that requires a specific answer.
-* •	Multiple choice card. Where you need to pick the correct answer among multiple options. Especially, it’s useful when you study for multiple choice exams where you have to pay attention to each possible answer.
+* Multiple choice card. Where you need to pick the correct answer among multiple options. Especially, it’s useful when you study for multiple choice exams where you have to pay attention to each possible answer.
 
 ### Study
 You will study the cards using the spaced review strategy to maximize your learning!
@@ -41,5 +41,6 @@ That's it!
 * Frontend: React Native.
 * Backend: MongoDB, Mongoose.
 
+Deployment coming soon!
 
 Welcome to Genius community! 🤓
