@@ -1,3 +1,7 @@
+<div align="center">
+<img src="./Client/assets/logo - full.png" alt="Genius Logo" width="500"/>
+</div>
+
 # Genius 🧠
 Genius is a mobile app that helps students to improve their knowledge and memory by using a card system and spaced review strategy.<br>
 Users can create their own cards and share them with the community, also study with cards available in the community section.
@@ -43,4 +47,9 @@ That's it!
 
 Deployment coming soon!
 
-Welcome to Genius community! 🤓
+Become Genius!
+And join to Genius community! 
+
+<div align="center">
+<img src="./Client/assets/logo - full.png" alt="Genius Logo" width="200"/>
+</div>
