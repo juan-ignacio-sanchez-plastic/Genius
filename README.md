@@ -3,8 +3,12 @@
 </div>
 
 # Genius 🧠
-Genius is a mobile app that helps students to improve their knowledge and memory by using a card system and spaced review strategy.<br>
+Genius is a mobile app that helps students to improve their knowledge and memory by using a card system and spaced review strategy that will flatten the forgetting curve.<br>
 Users can create their own cards and share them with the community, also study with cards available in the community section.
+
+<div align="center">
+<img src="./Client/assets/forgetting-curve-with-genius - readme.png" alt="Forgetting curve" width="500"/>
+</div>
 
 ## What you can do on Genius?
 ### Create cards
