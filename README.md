@@ -7,7 +7,7 @@ Genius is a mobile app that helps students to improve their knowledge and memory
 Users can create their own cards and share them with the community, also study with cards available in the community section.
 
 <div align="center">
-<img src="./Client/assets/forgetting-curve-with-genius - readme.png" alt="Forgetting curve" width="500"/>
+<img src="./Client/assets/forgetting-curve-with-genius - readme.png" alt="Forgetting curve" width="700"/>
 <img src="./Client/assets/mobile-use/genius-home.png" alt="Forgetting curve" width="300"/>
 <img src="./Client/assets/mobile-use/genius-screens.png" alt="Forgetting curve" width="800"/>
 </div>
